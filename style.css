@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2b6f4, #e6a9ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #1e32e4;
+}
+
+.main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #ccc;
+}
+
+/* Card */
+.stopwatch-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: inline-block;
+  min-width: 350px;
+}
+
+.event-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.arrow {
+  color: teal;
+}
+
+/* Time */
+.time-display {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #1e32e4;
+  margin-top: 8px;
+  padding: 0 5px;
+}
+
+/* Buttons */
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 0 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #a1c4fd, #c2b6f4);
+  color: #1e1e1e;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+}
+
+/* Lap list */
+#laps {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  color: #1e32e4;
+  font-size: 1.1rem;
+}
+
+#laps li {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 5px auto;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  width: fit-content;
+}

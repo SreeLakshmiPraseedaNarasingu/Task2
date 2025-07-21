@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch | SkillCraft</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+    <h1>STOPWATCH</h1>
+    <div class="stopwatch-card">
+      <div class="event-row">
+        <span>Event</span>
+        <span class="arrow">➤</span>
+      </div>
+      <div class="time-display" id="display">
+        <span id="d">00</span>:<span id="h">00</span>:<span id="m">00</span>:<span id="s">00</span>:<span id="ms">000</span>
+      </div>
+      <div class="labels">
+        <span>days</span>
+        <span>hours</span>
+        <span>minutes</span>
+        <span>seconds</span>
+        <span>ms</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="startStopBtn">START</button>
+      <button id="lapBtn">LAP</button>
+      <button id="resetBtn">RESTART</button>
+    </div>
+
+    <ul id="laps"></ul>
+    <audio id="lapSound" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
